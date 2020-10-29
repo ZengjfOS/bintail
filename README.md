@@ -9,7 +9,7 @@
 `python3 bintail.py --help`
 
 ```
-usage: bintail.py [-h] -i INPUT -a ACTION -n NUMBER
+usage: bintail.py [-h] -i INPUT [-a ACTION] [-n NUMBER] [-o OUTPUT]
 
 binary file tail to hex.
 
@@ -18,9 +18,11 @@ optional arguments:
   -i INPUT, --input INPUT
                         input file
   -a ACTION, --action ACTION
-                        [show/cut] file
+                        [tail(hex tail)/head(hex head)/sign(sign bin)/content(content bin)] of file
   -n NUMBER, -num NUMBER
                         number
+  -o OUTPUT, -output OUTPUT
+                        output file
 
-Example: python3 ./bintail.py -in input.bin -a [show/cut] -n 32
+Example: python3 ./bintail.py -i input.bin -a [tail/head/sign/content] -n 32
 ```
